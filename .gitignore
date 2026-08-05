@@ -1,0 +1,12 @@
+*.o
+*.a
+*.so
+
+
+/build/
+/glm/
+/glfw/
+/tinyobjloader/
+/objloader/
+/stb_image/
+cube_diorama.obj
