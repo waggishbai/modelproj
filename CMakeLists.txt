@@ -10,7 +10,6 @@ add_subdirectory(glfw)
 add_subdirectory(glm)
 
 target_include_directories(model PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/objloader)
-target_include_directories(model PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/stb_image)
 
 target_link_libraries(model glfw glad glm)
 

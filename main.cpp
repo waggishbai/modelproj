@@ -12,7 +12,7 @@
 #include <tiny_obj_loader.h>
 
 #define STB_IMAGE_IMPLEMENTATION
-#include <stb_image.h>
+//#include <stb_image.h>
 
 int main() {
     tinyobj::attrib_t attrib;
@@ -22,12 +22,12 @@ int main() {
     std::string warn;
     tinyobj::LoadObj(&attrib, &shapes, &mats, &err, &warn, "../cube_diorama.obj");
 
-    int w, h, somethingidcabt;
-    unsigned char* data = stbi_load("cube_diorama.mtl", &w, &h, &somethingidcabt, 0);
+    /*int w, h, somethingidcabt;
+    unsigned char* data = stbi_load("cube_diorama.mtl", &w, &h, &somethingidcabt, 0);*/
 
-    for (int i = 0; i < sizeof(data) / 2000; i++) {
+    /*for (int i = 0; i < sizeof(data) / 2000; i++) {
         std::cout << data[i] << std::endl;
-    }
+    }*/
 
     std::vector<float> vertices;
     std::cout << shapes.size() << std::endl;
